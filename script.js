@@ -267,10 +267,10 @@
         const material = get('material');
         const project = get('project');
         const details = get('details');
-        const softwareInquiryForm = project === 'Software / systems engineering';
+        const technologyInquiryForm = this.dataset.inquiryKind === 'technology' || project === 'Software / systems engineering';
         let body;
-        if (softwareInquiryForm) {
-          body = 'New SKYECON software and systems inquiry\n\nName: ' + name +
+        if (technologyInquiryForm) {
+          body = 'New SKYECON bounded software inquiry\n\nName: ' + name +
             '\nOrganization: ' + get('organization') +
             '\nEmail: ' + email +
             '\nPhone: ' + phone +
@@ -284,7 +284,7 @@
           const photoCount = this.photos && this.photos.files ? this.photos.files.length : 0;
           body = 'New Skyecon inquiry\n\nName: ' + name + '\nPhone: ' + phone + '\nEmail: ' + email + '\nCity/address: ' + location + '\nSquare footage: ' + sqft + '\nTimeline: ' + timeline + '\nMaterial purchased?: ' + material + '\nProject type: ' + project + '\nPhotos selected: ' + photoCount + ' (photos optional, but helpful)\n\nDetails:\n' + details;
         }
-        const subjectPrefix = softwareInquiryForm ? 'SKYECON software and systems inquiry' : 'Skyecon project inquiry';
+        const subjectPrefix = technologyInquiryForm ? 'SKYECON bounded software inquiry' : 'Skyecon project inquiry';
         const subject = subjectPrefix + ' — ' + (get('organization') || location || project || 'new lead');
         const separator = contactForEmail.emailHref.includes('?') ? '&' : '?';
         window.location.href = contactForEmail.emailHref + separator + 'subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);

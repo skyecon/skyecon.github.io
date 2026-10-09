@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Discuss a Bounded Problem | SKYECON</title>
+  <meta name="description" content="Start a bounded public-sector software discussion with SKYECON in British Columbia.">
+  <link rel="canonical" href="https://skyecon.ca/contact/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SKYECON">
+  <meta property="og:title" content="Discuss a Bounded Problem | SKYECON">
+  <meta property="og:description" content="Describe the outcome, current workflow, constraints, and available evidence. No sensitive data is required for an initial discussion.">
+  <meta property="og:url" content="https://skyecon.ca/contact/">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/redesign.css?v=20261009-technology">
+  <script defer src="/script.js?v=20261009-technology"></script>
+  <script defer src="https://challenges.cloudflare.com/turnstile/v0/api.js"></script>
+</head>
+<body class="division-page software-contact-page technology-contact-page">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="masthead tech-masthead">
+    <a class="wordmark" href="/" aria-label="SKYECON home">SKYECON</a>
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-menu" data-mobile-menu-toggle>Menu</button>
+    <nav class="primary-nav" id="primary-menu" aria-label="Primary navigation">
+      <a href="/#work">Work</a>
+      <a href="/#public-sector">Public Sector</a>
+      <a href="/about/">Company</a>
+      <a href="/contact/" aria-current="page">Contact</a>
+    </nav>
+    <span class="tech-location">British Columbia</span>
+  </header>
+
+  <main id="main-content">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">SKYECON</a><span aria-hidden="true">/</span><span>Contact</span></nav>
+
+    <section class="inquiry-hero" aria-labelledby="inquiry-title">
+      <div><p class="locator">Bounded operational software</p><h1 id="inquiry-title">Discuss a bounded problem.</h1></div>
+      <div class="inquiry-intro"><p>Describe one operational problem and what must be true when it is solved. An initial discussion does not require production access, credentials, protected records, or a complete procurement brief.</p><p><strong>Do not send credentials, personal information, protected records, recordings, private source code, or other sensitive data through this form.</strong> If protected material is later required, SKYECON will establish an authorized handling process first.</p></div>
+    </section>
+
+    <section class="inquiry-layout" aria-labelledby="brief-title">
+      <div class="inquiry-guide">
+        <p class="kicker">A useful first brief</p>
+        <h2 id="brief-title">Enough context to define the next step.</h2>
+        <ol>
+          <li><b>Outcome</b><span>What must work for users or operations?</span></li>
+          <li><b>Current state</b><span>What system or workflow exists now?</span></li>
+          <li><b>Gap</b><span>What fails, remains manual, or blocks completion?</span></li>
+          <li><b>Evidence</b><span>What public or non-sensitive material can be reviewed?</span></li>
+          <li><b>Boundary</b><span>Who owns the decision, data, and release authority?</span></li>
+        </ol>
+      </div>
+
+      <div class="inquiry-form-panel">
+        <div class="contact-gate" data-skyecon-contact-gate>
+          <h3>Reveal verified contact details</h3>
+          <p>Complete the human check to reveal SKYECON's phone and email and enable the prepared inquiry.</p>
+          <div class="cf-turnstile" data-callback="skyeconContactGateVerified" data-error-callback="skyeconContactGateExpired" data-expired-callback="skyeconContactGateExpired" data-sitekey="0x4AAAAAADKobA1CR6y3Igis"></div>
+          <button class="contact-gate-button" data-contact-reveal disabled type="button">Complete verification above</button>
+          <p aria-live="polite" class="contact-gate-status" data-contact-status role="status">Phone and email appear automatically after verification.</p>
+          <div class="contact-gate-output" data-contact-output hidden></div>
+        </div>
+
+        <form class="software-inquiry-form" id="contact-form" data-inquiry-kind="technology">
+          <input name="project" type="hidden" value="Technology / bounded system">
+          <div class="inquiry-fields">
+            <label><strong>Name</strong><input name="name" autocomplete="name" required type="text"></label>
+            <label><strong>Organization</strong><input name="organization" autocomplete="organization" type="text"></label>
+            <label><strong>Email</strong><input name="email" autocomplete="email" required type="email"></label>
+            <label><strong>Phone</strong><input name="phone" autocomplete="tel" type="tel"></label>
+            <label class="full"><strong>Outcome required</strong><textarea name="objective" required rows="3" placeholder="What must be true when this works?"></textarea></label>
+            <label class="full"><strong>Current system or workflow</strong><textarea name="currentSystem" rows="3" placeholder="What exists now, and where does the work break down?"></textarea></label>
+            <label><strong>Primary users</strong><input name="users" type="text" placeholder="Who performs or depends on the work?"></label>
+            <label><strong>Timing</strong><select name="timeline"><option>Exploratory</option><option>This quarter</option><option>Time-sensitive</option><option>Procurement planning</option></select></label>
+            <label class="full"><strong>Constraints and available evidence</strong><textarea name="details" required rows="5" placeholder="Non-sensitive constraints, public links, acceptance criteria, known dependencies, and the authority responsible for release."></textarea></label>
+          </div>
+          <button class="solid-action form-submit" type="submit">Prepare inquiry</button>
+          <p class="form-note">This opens your mail application with the brief prepared. Nothing is transmitted by this page before you choose to send it.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer tech-footer">
+    <strong>SKYECON</strong>
+    <nav aria-label="Footer navigation"><a href="/#work">Work</a><a href="/#public-sector">Public Sector</a><a href="/about/">Company</a><a href="/contact/">Contact</a></nav>
+    <p class="prototype-note">Skyecon Contracting Ltd. · British Columbia, Canada</p>
+  </footer>
+</body>
+</html>

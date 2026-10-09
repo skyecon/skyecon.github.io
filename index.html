@@ -3,17 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SKYECON | Choose a Division</title>
-  <meta name="description" content="Choose a SKYECON division: Software &amp; Systems Engineering or Commercial Flooring &amp; Finishing.">
+  <title>SKYECON | B.C. Public-Sector Software</title>
+  <meta name="description" content="SKYECON builds bounded operational software for public-sector work with clear outcomes, reviewable results, and documented handoff.">
   <link rel="canonical" href="https://skyecon.ca/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="SKYECON">
-  <meta property="og:title" content="SKYECON | Choose a Division">
-  <meta property="og:description" content="Software &amp; Systems Engineering or Commercial Flooring &amp; Finishing.">
+  <meta property="og:title" content="SKYECON | B.C. Public-Sector Software">
+  <meta property="og:description" content="Software for public-sector work that has to stand up to review.">
   <meta property="og:url" content="https://skyecon.ca/">
-
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="redesign.css?v=20261009-division-gateway">
+  <link rel="stylesheet" href="redesign.css?v=20261009-technology">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -24,7 +23,8 @@
         "name": "Skyecon Contracting Ltd.",
         "alternateName": "SKYECON",
         "url": "https://skyecon.ca/",
-        "areaServed": {"@type": "AdministrativeArea", "name": "British Columbia"}
+        "areaServed": {"@type": "AdministrativeArea", "name": "British Columbia"},
+        "description": "A British Columbia technology company focused on bounded operational software for public-sector work."
       },
       {
         "@type": "WebSite",
@@ -36,30 +36,115 @@
     ]
   }
   </script>
+  <script src="script.js" defer></script>
 </head>
-<body class="page-home gateway-only">
-  <a class="skip-link" href="#main-content">Skip to division choices</a>
+<body class="page-tech-home">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <header class="masthead gateway-masthead">
+  <header class="masthead tech-masthead">
     <a class="wordmark" href="/" aria-label="SKYECON home">SKYECON</a>
-    <span class="gateway-location">British Columbia</span>
+    <button class="menu-toggle" type="button" data-mobile-menu-toggle aria-expanded="false" aria-label="Open menu">Menu</button>
+    <nav class="primary-nav" aria-label="Primary navigation">
+      <a href="#work">Work</a>
+      <a href="#public-sector">Public Sector</a>
+      <a href="/about/">Company</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+    <span class="tech-location">British Columbia</span>
   </header>
 
   <main id="main-content">
-    <section class="division-gateway" aria-labelledby="gateway-title">
-      <a class="gateway-choice gateway-choice-software" href="/software-systems-engineering/">
-        <h1 class="gateway-prompt" id="gateway-title">Choose a division</h1>
-        <span class="gateway-number">01</span>
-        <strong>Software &amp;<br>Systems Engineering</strong>
-        <span class="gateway-enter">Enter <span aria-hidden="true">↗</span></span>
-      </a>
+    <section class="tech-opening" aria-labelledby="opening-title">
+      <div class="tech-opening-copy">
+        <p class="tech-eyebrow">B.C. public-sector software</p>
+        <h1 id="opening-title">Software for public-sector work that has to stand up to review.</h1>
+        <p class="tech-opening-deck">SKYECON is a British Columbia technology company focused on bounded operational software—work with clear outcomes, reviewable results, and documented handoff.</p>
+        <div class="tech-actions">
+          <a class="tech-action-primary" href="#work">View current work</a>
+          <a class="tech-action-secondary" href="/contact/">Discuss a bounded problem</a>
+        </div>
+      </div>
+      <dl class="tech-opening-rail" aria-label="Operating focus">
+        <div><dt>01</dt><dd>Bounded scope</dd></div>
+        <div><dt>02</dt><dd>Clear acceptance</dd></div>
+        <div><dt>03</dt><dd>Documented handoff</dd></div>
+      </dl>
+    </section>
 
-      <a class="gateway-choice gateway-choice-flooring" href="/flooring/">
-        <span class="gateway-number">02</span>
-        <strong>Commercial Flooring<br>&amp; Finishing</strong>
-        <span class="gateway-enter">Enter <span aria-hidden="true">↗</span></span>
-      </a>
+    <section class="tech-work" id="work" aria-labelledby="work-title">
+      <header class="tech-section-heading">
+        <p class="tech-index">01 / Current work</p>
+        <div>
+          <h2 id="work-title">Current development evidence</h2>
+          <p>Until public delivery evidence can be shared, SKYECON uses real development work to demonstrate how source material, system output, human correction, and release decisions can remain visible.</p>
+        </div>
+      </header>
+
+      <article class="development-case">
+        <div class="development-case-copy">
+          <p class="tech-label">Development case — Transcript Studio</p>
+          <h3>A review workspace built around the source.</h3>
+          <p>A SKYECON development project exploring local transcription, source-linked review, and human correction. Demonstrations use synthetic demonstration content. It is not a B.C. government deployment.</p>
+          <ul>
+            <li>Source-linked passages</li>
+            <li>Human correction controls</li>
+            <li>Visible review state</li>
+          </ul>
+          <a class="text-action" href="/transcript-studio/">Inspect the development case</a>
+        </div>
+        <figure class="development-case-figure">
+          <img src="images/evidence/transcript-studio-development-workspace.webp" width="1600" height="1000" loading="lazy" alt="Transcript Studio development workspace showing a transcript beside source-linked review controls">
+          <figcaption><span>Actual development-build interface</span><span>Synthetic sample content</span></figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <section class="tech-operating-model" aria-labelledby="operating-model-title">
+      <header>
+        <p class="tech-index">02 / Operating capability</p>
+        <h2 id="operating-model-title">What SKYECON works on—and what the work should preserve.</h2>
+      </header>
+      <div class="operating-registers">
+        <div class="operating-register">
+          <h3>Defined work</h3>
+          <article><span>01</span><div><h4>Operational software</h4><p>Purpose-built tools for work that does not fit a generic product.</p></div></article>
+          <article><span>02</span><div><h4>Workflow repair</h4><p>Clearer states, fewer manual gaps, and explicit responsibility at each handoff.</p></div></article>
+          <article><span>03</span><div><h4>Information flow</h4><p>Interfaces and integrations that keep source, context, and decisions connected.</p></div></article>
+          <article><span>04</span><div><h4>Review and release</h4><p>Human correction, acceptance criteria, and controlled release built into the work.</p></div></article>
+        </div>
+        <div class="operating-register">
+          <h3>Accountable standards</h3>
+          <article><span>01</span><div><h4>Source visibility</h4><p>Keep the material behind a result available for review where the workflow permits it.</p></div></article>
+          <article><span>02</span><div><h4>Human authority</h4><p>Make correction and release decisions explicit instead of hiding them behind automation.</p></div></article>
+          <article><span>03</span><div><h4>Portable handoff</h4><p>Document interfaces, decisions, and operating boundaries so the customer is not trapped by ambiguity.</p></div></article>
+          <article><span>04</span><div><h4>Claim discipline</h4><p>State what was built, what was tested, and what remains unproven.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="tech-public-sector" id="public-sector" aria-labelledby="public-sector-title">
+      <div>
+        <p class="tech-index">03 / British Columbia</p>
+        <h2 id="public-sector-title">Start with a bounded outcome. Earn the next responsibility.</h2>
+      </div>
+      <div class="public-sector-copy">
+        <p>SKYECON is building toward public-sector work where privacy, records, accessibility, authorization, review, and defensible handoff matter. The immediate offer is deliberately narrow: complete a defined piece of operational software against explicit acceptance criteria.</p>
+        <p>Customer ownership, open-source delivery, or customer-controlled deployment can be supported where the procurement and technical requirements call for them. The contract decides ownership; the work should remain understandable.</p>
+        <p class="public-sector-guidance">For an initial discussion, describe the outcome, present constraint, and acceptance test. Do not send credentials, protected records, private source code, recordings, or sensitive data.</p>
+        <a class="tech-action-light" href="/contact/">Bring us a bounded problem</a>
+      </div>
     </section>
   </main>
+
+  <footer class="site-footer tech-footer">
+    <strong>SKYECON</strong>
+    <nav aria-label="Footer navigation">
+      <a href="#work">Work</a>
+      <a href="#public-sector">Public Sector</a>
+      <a href="/about/">Company</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+    <p class="prototype-note">Skyecon Contracting Ltd. · British Columbia, Canada</p>
+  </footer>
 </body>
 </html>
