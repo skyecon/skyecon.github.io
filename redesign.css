@@ -1085,6 +1085,23 @@ body.page-home.gateway-only {
   line-height: .92;
 }
 .tech-section-heading p:last-child { max-width: 47ch; color: var(--mist); }
+.upstream-evidence {
+  display: grid;
+  grid-template-columns: minmax(15rem,.48fr) minmax(0,1.2fr);
+  gap: clamp(2rem, 7vw, 8rem);
+  margin-bottom: clamp(4rem, 7vw, 7rem);
+  padding: clamp(1.4rem, 2.7vw, 2.4rem) 0;
+  border-top: 1px solid #69706d;
+  border-bottom: 1px solid #69706d;
+}
+.upstream-evidence-meta { display: flex; min-width: 0; flex-direction: column; justify-content: space-between; gap: 2rem; }
+.upstream-evidence-meta p { margin: 0; }
+.upstream-evidence-meta p:last-child { color: var(--mist); font: 700 .66rem/1.4 var(--condensed); letter-spacing: .08em; text-transform: uppercase; }
+.upstream-evidence-copy { max-width: 47rem; }
+.upstream-evidence-copy h3 { margin: 0 0 1rem; font: 400 clamp(1.8rem, 3vw, 3rem)/.98 var(--display); letter-spacing: -.035em; }
+.upstream-evidence-copy > p { max-width: 62ch; color: var(--mist); }
+.upstream-evidence-links { display: flex; flex-wrap: wrap; gap: 1.2rem 2rem; margin-top: 1.6rem; }
+.upstream-evidence-links .text-action { color: white; border-bottom-color: var(--accent-light); }
 .development-case { display: grid; grid-template-columns: minmax(19rem,.6fr) minmax(0,1.4fr); gap: clamp(2rem, 5vw, 5rem); align-items: center; }
 .development-case-copy h3 { margin: 1.15rem 0; font-family: var(--display); font-size: clamp(2.5rem, 4.6vw, 5rem); font-weight: 400; letter-spacing: -.045em; line-height: .93; }
 .development-case-copy > p:not(.tech-label) { color: var(--mist); }
@@ -1131,6 +1148,7 @@ body.page-home.gateway-only {
   .tech-capabilities > header,
   .tech-standards,
   .tech-public-sector { grid-template-columns: 1fr; }
+  .upstream-evidence { grid-template-columns: 1fr; }
   .development-case { grid-template-columns: 1fr; }
   .development-case-copy { max-width: 42rem; }
   .capability-grid { grid-template-columns: repeat(2,1fr); }
@@ -1151,6 +1169,9 @@ body.page-home.gateway-only {
   .tech-opening-rail div { min-height: 54px; padding: .7rem 0; border-right: 0; border-bottom: 1px solid #d7d8d3; }
   .tech-opening-rail div + div { padding-left: 0; }
   .tech-opening-rail div:last-child { border-bottom: 0; }
+  .upstream-evidence { padding-block: 1.25rem; }
+  .upstream-evidence-meta { gap: .6rem; }
+  .upstream-evidence-links { display: grid; justify-items: start; }
   .development-case-copy h3 { font-size: 2.8rem; }
   .development-case-figure { width: calc(100% + 1rem); }
   .development-case-figure figcaption { display: grid; }
